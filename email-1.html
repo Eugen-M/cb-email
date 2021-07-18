@@ -66,13 +66,15 @@
             width: 140px;
             margin: 0 auto;
         }
-
-        @media only screen and (max-width: 480px) {
-            /* mobile-specific CSS styles go here */
+        
+        @media only screen and (max-width: 720px) {
             table[class="main-table"] {
                 width: 100% !important;
             }
+        }
 
+        @media only screen and (max-width: 480px) {
+            /* mobile-specific CSS styles go here */
             td[class="box"] {
                 border-radius: 8px !important;
                 padding-left: 20px !important;
@@ -143,6 +145,10 @@
                 padding-bottom: 25px !important;
                 padding-left: 40px !important;
                 padding-right: 40px !important;
+            }
+            
+            span[class="subtext-title"] {
+                display: block !important;
             }
             
             table[class="social-table"] {
@@ -221,7 +227,7 @@
                         <tbody>
                             <tr>
                                 <td style="background-color: #FFFFFF; padding: 26px 30px 20px; border-radius: 2px;" class="box-bottom">
-                                    <p class="subtext" style="color: #000000; font-size: 14px; line-height: 21px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: center; margin: 0;">Sincerely, <strong style="font-weight: 700; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">ComplaintsBoard.com Team</strong></p>
+                                    <p class="subtext" style="color: #000000; font-size: 14px; line-height: 21px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: center; margin: 0;"><span class="subtext-title">Sincerely,</span> <strong style="font-weight: 700; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">ComplaintsBoard.com Team</strong></p>
                                     
                                     <p class="subtext" style="color: #000000; font-size: 14px; line-height: 21px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: center; margin: 0;">Successfully voicing consumer concerns since 2004</p>
                                 </td>
