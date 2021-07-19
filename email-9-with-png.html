@@ -67,15 +67,19 @@
             table[class="main-table"] {
                 width: 100% !important;
             }
+            
+            span[class="b-link-title"] {
+                display: block;
+            }
         }
 
         @media only screen and (max-width: 480px) {
             /* mobile-specific CSS styles go here */
             td[class="box"] {
                 border-radius: 8px !important;
-                padding-left: 20px !important;
-                padding-right: 20px !important;
-                padding-bottom: 12px !important;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+                padding-bottom: 18px !important;
             }
             
             td[class="box-bottom"] {
@@ -96,17 +100,51 @@
             p[class="title"] {
                 font-size: 24px !important;
                 line-height: 28px !important;
+                margin-bottom: 6px !important;
             }
             
             p[class="subtitle"] {
+                font-size: 16px !important;
+                line-height: 23px !important;
                 padding-left: 10px !important;
                 padding-right: 10px !important;
-                margin-bottom: 16px !important;
             }
             
-            p[class="descr"] {
+            td[class="subject"] {
                 padding-left: 10px !important;
                 padding-right: 10px !important;
+                padding-bottom: 15px !important;
+            }
+            
+            span[class="check-item"] {
+                display: block !important;
+                margin-bottom: 14px !important;
+            } 
+            
+            p[class="subtitle-check"] {
+                margin-bottom: 10px !important;
+            }
+            
+            td[class="b-link"] {
+                padding-top: 15px !important;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+            
+            p[class="b-link-text"] {
+                font-size: 16px !important;
+                line-height: 23px !important;
+                margin-bottom: 6px !important;
+            }
+            
+            a[class="b-link-email"] {
+                font-size: 16px !important;
+                line-height: 23px !important;
+            }
+            
+            strong[class="b-link-hours"] {
+                font-size: 16px !important;
+                line-height: 23px !important;
             }
             
             td[class="picture-block"] {
@@ -117,7 +155,7 @@
                 padding-top: 15px !important;
                 padding-left: 0px !important;
                 padding-right: 0px !important;
-                padding-bottom: 0px !important;
+                padding-bottom: 5px !important;
             }
             
             a[class="social-link"] {
@@ -130,16 +168,15 @@
                 height: 51px !important;
             }
             
-            td[class="column-button"] {
-                padding-left: 0px !important;
-                padding-right: 0px !important;
-            }
-            
             td[class="copyright"] {
                 padding-top: 11px !important;
                 padding-bottom: 25px !important;
                 padding-left: 40px !important;
                 padding-right: 40px !important;
+            }
+            
+            span[class="subtext-title"] {
+                display: block !important;
             }
             
             table[class="social-table"] {
@@ -156,7 +193,7 @@
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" >
                         <tbody>
                             <tr>
-                                <td style="background-color: #FFFFFF; border-radius: 2px; padding: 30px 25px 32px 25px;" class="box">
+                                <td style="background-color: #FFFFFF; border-radius: 2px; padding: 30px 43px 18px 43px;" class="box">
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" >
                                         <tbody>
                                             <tr>
@@ -168,16 +205,45 @@
                                             </tr>
                                             <tr>
                                                 <td style="padding: 42px 32px 0 32px; text-align: center; font-size: 0; line-height: 0;" align="center" class="picture-block">
-                                                    <img src="images/envelope-with-arrow.png" alt="" width="114" height="114" border="0" style="display: inline-block;" class="picture" />
+                                                    <img src="images/surface.png" alt="" width="114" height="114" border="0" style="display: inline-block;" class="picture" />
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="padding: 35px 0 0 0;" class="text-block">
-                                                    <p class="title" style="color: #000000; font-size: 34px; line-height: 39px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: center; margin: 0 0 10px;">Hello</p>
+                                                <td style="padding: 23px 0 5px 0;" class="text-block">
+                                                    <p class="title" style="color: #000000; font-size: 34px; line-height: 39px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: center; margin: 0 0 11px;">Hello, Lina </p>
                                                    
-                                                    <p class="subtitle" style="color: #040404; font-size: 18px; line-height: 26px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: center; margin: 0 0 26px; padding: 0 18% 0 18%;">We’ve got good news for you. No new complaints have been filed against your company in April!</p>
-                                                    
-                                                    <p style="color: #000000; font-size: 16px; line-height: 24px; font-weight: 700; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: center; margin: 0; padding: 0 18% 13px 18%;" class="descr">Looks like your customers are absolutely delighted with your services! That's very impressive! You've raised your standards, keep them up high! <img src="images/hugging-face.png" alt="" width="18" height="18" border="0" style="display: inline-block; vertical-align: middle;" class="icon" /></p>
+                                                    <p class="subtitle" style="color: #040404; font-size: 18px; line-height: 26px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 12px; padding: 0 20px;">Your complaint has been marked as resolved:</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="subject" style="padding: 0; background: #F4F6F8; border-radius: 2px; padding: 20px 20px 23px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" >
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding: 0;">
+                                                                    <p style="margin: 0 0 14px;">
+                                                                        <span style="color: #474747; font-size: 14px; line-height: 22px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: center; margin: 0; opacity: 0.5;">Sep 18, 2009</span>
+                                                                    </p>
+                                                                    <p style="color: #1D1D1E; font-size: 18px; line-height: 20px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 5px;" class="subtitle-check">
+                                                                        <span class="check-item" style="padding: 0; margin: 0; display: inline-block; vertical-align: middle;">
+                                                                            <span class="" style="background: #D7E3DE; border-radius: 48px; display: inline-block; vertical-align: middle; margin-right: 5px; padding: 2px 14px; color: #099340; font-size: 12px; line-height: 19px;">
+                                                                                <img src="images/icon-check.png" alt="" width="12" height="12" border="0" style="display: inline-block; vertical-align: middle;" class="icon-check" />
+                                                                                Resolved
+                                                                            </span>
+                                                                        </span>
+                                                                        Subject of complaint</p>
+                                                                    <p style="color: #010101; font-size: 16px; line-height: 24px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0;">I booked my ticket on 6 Apr 2021 through Ethihad, BAH-ABU-COK, I reached the airport 3hr before and stand in the que...</p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>      
+                                            <tr>
+                                                <td style="padding: 20px 13% 5px 20px;" class="b-link">
+                                                    <p style="color: #040404; font-size: 18px; line-height: 26px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 10px;" class="b-link-text">If you believe this is a mistake or you are unhappy with the solution that has been provided, please contact us at <a href="mailto:support@complaintsboard.com" target="_blank" style="font-size: 18px; line-height: 26px; color: #1c47a1; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" class="b-link-email">support@complaintsboard.com</a>.</p>
+                                                        
+                                                    <p style="color: #040404; font-size: 18px; line-height: 26px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0;" class="b-link-text">We will endeavor to respond to your query at the earliest opportunity, normally within <strong style="color: #040404; font-size: 16px; line-height: 22px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; text-align: center;" class="b-link-hours">48 hours (business days only)</strong>.</p>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -194,9 +260,7 @@
                         <tbody>
                             <tr>
                                 <td style="background-color: #FFFFFF; padding: 26px 30px 20px; border-radius: 2px;" class="box-bottom">
-                                    <p class="subtext" style="color: #000000; font-size: 14px; line-height: 21px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: center; margin: 0;">Sincerely,</p>
-                                    
-                                    <p class="subtext" style="color: #000000; font-size: 14px; line-height: 21px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: center; margin: 0;"><strong style="font-weight: 700; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">ComplaintsBoard.com Team</strong></p>
+                                    <p class="subtext" style="color: #000000; font-size: 14px; line-height: 21px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: center; margin: 0;"><span class="subtext-title">Sincerely,</span> <strong style="font-weight: 700; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">ComplaintsBoard.com Team</strong></p>
                                     
                                     <p class="subtext" style="color: #000000; font-size: 14px; line-height: 21px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: center; margin: 0;">Successfully voicing consumer concerns since 2004</p>
                                 </td>
@@ -207,12 +271,10 @@
             </tr>
             <!-- copyright -->
             <tr>
-                <td style="padding: 21px 20px 17px;" class="copyright">
+                <td style="padding: 21px 20px 30px;" class="copyright">
                     <p style="color: #474747; font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; line-height: 17px; text-align: center;">If you don’t want to receive notifications from our website, click <a href=""  target="_blank" style="font-size: 12px; line-height: 16px; color: #1C47A1; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">unsubscribe</a>.</p>
                     
-                    <p style="color: #474747; font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; line-height: 17px; text-align: center;">For more information, please read our <a href=""  target="_blank" style="font-size: 12px; line-height: 16px; color: #1C47A1; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">Consumer FAQ</a> and <a href=""  target="_blank" style="font-size: 12px; line-height: 16px; color: #1C47A1; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">Business FAQ</a></p>
-                    
-                    <p style="color: #474747; font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; line-height: 17px; text-align: center;">And you can always reach us at <a href="mailto:support@complaintsboard.com"  target="_blank" style="font-size: 12px; line-height: 16px; color: #1C47A1; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">support@complaintsboard.com</a></p>
+                    <p style="color: #474747; font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; line-height: 17px; text-align: center;">For more information, please read our <a href=""  target="_blank" style="font-size: 12px; line-height: 16px; color: #1C47A1; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">FAQ</a></p>
                 </td>
             </tr>
             <!-- social buttons -->
