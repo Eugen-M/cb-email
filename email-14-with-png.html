@@ -53,7 +53,8 @@
         }
         
         .box,
-        .box-bottom {
+        .box-bottom,
+        .box-second {
             background: #FFFFFF;
             border-radius: 2px;
         }
@@ -63,14 +64,18 @@
             margin: 0 auto;
         }
         
-        .line-column {
-            width: 20%;
-            vertical-align: top;
+        td[class="component-mini"] {
+            display: none !important;
         }
         
         @media only screen and (max-width: 720px) {
             table[class="main-table"] {
                 width: 100% !important;
+            }
+            
+            td[class="column-button"] {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
             }
         }
 
@@ -94,9 +99,17 @@
             td[class="box"] {
                 border-radius: 8px !important;
                 padding-top: 26px !important;
-                padding-left: 20px !important;
-                padding-right: 20px !important;
-                padding-bottom: 19px !important;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+                padding-bottom: 10px !important;
+            }
+            
+            td[class="box-second"] {
+                border-radius: 8px !important;
+                padding-top: 14px !important;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+                padding-bottom: 7px !important;
             }
             
             td[class="box-bottom"] {
@@ -106,35 +119,8 @@
             }
             
             td[class="wrap"] {
-                padding-top: 20px !important;
                 padding-left: 20px !important;
                 padding-right: 20px !important;
-            }
-            
-            td[class="center-column"] {
-                padding-left: 20px !important;
-                padding-right: 20px !important;
-                padding-bottom: 0px !important;
-            }
-            
-            td[class="center-column-header"] {
-                padding-left: 20px !important;
-                padding-right: 20px !important;
-                padding-bottom: 17px !important;
-            }
-            
-            td[class="center-column-content"] {
-                padding-left: 43px !important;
-                padding-right: 43px !important;
-                padding-bottom: 7px !important;
-            }
-            
-            li[class="center-column-item"] {
-                padding-bottom: 15px !important;
-            }
-            
-            td[class="line-column"] {
-                display: none !important;
             }
             
             p[class="title"] {
@@ -146,13 +132,52 @@
             p[class="subtitle"] {
                 font-size: 16px !important;
                 line-height: 23px !important;
+                margin-bottom: 14px !important;
+            }
+            
+            p[class="subtitle-first"] {
+                font-size: 16px !important;
+                line-height: 23px !important;
+                margin-bottom: 7px !important;
+            }
+            
+            a[class="subtitle-link"] {
+                font-size: 16px !important;
+                line-height: 23px !important;
+            }
+            
+            strong[class="subtitle-strong"] {
+                font-size: 16px !important;
+                line-height: 23px !important;
+            }
+            
+            strong[class="subtitle-strong"] {
+                font-size: 16px !important;
+                line-height: 23px !important;
+            }
+            
+            a[class="subtitle-link"] {
+                font-size: 16px !important;
+                line-height: 23px !important;
             }
             
             td[class="text-block"] {
                 padding-top: 0px !important;
-                padding-left: 0px !important;
-                padding-right: 0px !important;
-                padding-bottom: 0px !important;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+                padding-bottom: 4px !important;
+            }
+            
+            td[class="subject"] {
+                padding-bottom: 15px !important;
+            }
+            
+            td[class="component-big"] {
+                display: none !important;
+            }
+            
+            td[class="component-mini"] {
+                display: block !important;
             }
             
             a[class="social-link"] {
@@ -170,6 +195,10 @@
                 padding-bottom: 25px !important;
                 padding-left: 20px !important;
                 padding-right: 20px !important;
+            }
+            
+            strong[class="wrap-title"] {
+                display: block;
             }
             
             p[class="copyright-row"] {
@@ -207,18 +236,38 @@
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" >
                         <tbody>
                             <tr>
-                                <td style="background-color: #FFFFFF; border-radius: 2px; padding: 30px 25px 32px 25px;" class="box">
+                                <td style="background-color: #FFFFFF; border-radius: 2px; padding: 30px 40px 42px 40px;" class="box">
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                         <tbody>
                                             <tr>
-                                                <td style="padding: 7px 9% 1px 9%;" class="text-block">
+                                                <td style="padding: 7px 20px 15px 20px;" class="text-block">
                                                     <p class="title" style="color: #000000; font-size: 34px; line-height: 39px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 13px;">Hello, Lina  </p>
                                                    
-                                                    <p class="subtitle" style="color: #040404; font-size: 18px; line-height: 26px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 10px;">Thank you for sharing your concerns with us.</p>
-                                                    
-                                                    <p class="subtitle" style="color: #040404; font-size: 18px; line-height: 26px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0;">We’ll let you know as soon as your complaint is published, typically within <strong style="font-weight: 700; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">48 hours</strong>.</p>
+                                                    <p class="subtitle" style="color: #040404; font-size: 18px; line-height: 26px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 10px;">A new complaint has been filed against Floryday.</p>
                                                 </td>
                                             </tr>
+                                            <tr>
+                                                <td class="subject" style="padding: 0; background: #F4F6F8; border-radius: 2px; padding: 20px 20px 33px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" >
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding: 0;">
+                                                                    <p style="margin: 0 0 16px;">
+                                                                        <span style="color: #474747; font-size: 14px; line-height: 22px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: center; margin: 0; opacity: 0.5;">Sep 18, 2009</span>
+                                                                    </p>
+                                                                    <p style="color: #1D1D1E; font-size: 18px; line-height: 20px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 8px;" class="subtitle-check">Subject of complaint</p>
+                                                                    <p style="color: #010101; font-size: 16px; line-height: 24px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 31px;">I booked my ticket on 6 Apr 2021 through Ethihad, BAH-ABU-COK, I reached the airport 3hr before and stand in the que...</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding: 0 31% 0 31%;" valign="middle" class="column-button">
+                                                                    <a href=""  target="_blank" class="btn" style="color: #FFFFFF; font-size: 14px; line-height: 19px; background-color: #040404; display: block; padding: 9px 20px 10px; text-align: center; border-radius: 8px; text-decoration: none;">See the complaint</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>      
                                         </tbody>
                                     </table>
                                 </td>
@@ -228,44 +277,32 @@
                 </td>
             </tr>
             <tr>
-                <td style="padding: 0 30px 10px;" class="center-column">
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-radius: 4px; background: #e0ecea;">
+                <td style="padding: 0 30px 5px 30px;" class="wrap">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" >
                         <tbody>
                             <tr>
-                                <td style="padding: 24px 35px 21px;" class="center-column-header">
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" >
+                                <td style="background-color: #FFFFFF; border-radius: 2px; padding: 1px 40px 1px 50px;" class="box-second">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                         <tbody>
                                             <tr>
-                                                <td style="padding: 12px 0 0 0;" class="line-column" valign="top">
-                                                    <div style="background-color: #95B1AD; height: 1px; width: 100%;"></div>
+                                                <td style="padding: 24px 10px 0 10px;" class="text-block">
+                                                    <p class="subtitle" style="color: #040404; font-size: 18px; line-height: 26px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 10px;">You received this email because you’ve subscribed to notifications about new complaints of Floryday.</p>
+                                                    
+                                                    <p class="subtitle" style="color: #040404; font-size: 18px; line-height: 26px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0;">If you’d like to unsubscribe, you must access the <a href="" target="_blank" style="color: #1C47A1; font-size: 18px; line-height: 26px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-decoration: none;" class="subtitle-link">Floryday Business account</a> and click <strong style="color: #040404; font-size: 18px; line-height: 26px; font-weight: 700; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" class="subtitle-strong">Unfollow</strong></p>
                                                 </td>
-                                                <td style="padding: 0 12px 0 12px; font-size: 18px; color: #1D1D1E; line-height: 22px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: center;" valign="middle" class="column-title">
-                                                    In the meantime, please check out the frequently asked questions:
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 0;" class="component-big">
+                                                    <img src="images/component-big.png"  alt="" width="100%" border="0" style="display: block; margin: 0; width: 555px; border: none; background-size: cover; max-width: 100%; height: auto;"  />
                                                 </td>
-                                                <td style="padding: 12px 0 0 0;" class="line-column" valign="top">
-                                                    <div style="background-color: #95B1AD; height: 1px; width: 100%;"></div>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 4px 0 14px;" class="component-mini">
+                                                    <img src="images/component-mini.png"  alt="" width="100%" border="0" style="display: block; margin: 0; border: none; background-size: cover; width: 315px; max-width: 100%; height: auto;" />
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 0 20% 41px 13%;" class="center-column-content">
-                                    <ul style="color: #1C47A1; font-size: 14px; line-height: 20px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; padding: 0;" align="left" type="disc">
-                                        <li class="center-column-item">
-                                            <a href="" style="color: #1C47A1; font-size: 14px; line-height: 23px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-decoration: none;" class="link-item"  target="_blank">How does ComplaintsBoard.com help resolve complaints?</a>
-                                        </li>
-                                        <li class="center-column-item">
-                                            <a href="" style="color: #1C47A1; font-size: 14px; line-height: 23px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-decoration: none;" class="link-item"  target="_blank">I left a complaint that had my personal information in it. I want it to be removed as soon as possible.</a>
-                                        </li>
-                                        <li class="center-column-item">
-                                            <a href="" style="color: #1C47A1; font-size: 14px; line-height: 23px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-decoration: none;" class="link-item"  target="_blank">I realized I attached pictures with personal information. How can I remove them?</a>
-                                        </li>
-                                        <li class="center-column-item">
-                                            <a href="" style="color: #1C47A1; font-size: 14px; line-height: 23px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-decoration: none;" class="link-item"  target="_blank">Can I edit my complaint?</a>
-                                        </li>
-                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -273,7 +310,7 @@
                 </td>
             </tr>
             <tr>
-                <td style="padding: 10px 30px 10px 30px;" class="wrap">
+                <td style="padding: 20px 30px 10px 30px;" class="wrap">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" >
                         <tbody>
                             <tr>
@@ -290,14 +327,13 @@
             </tr>
             <!-- copyright -->
             <tr>
-                <td style="padding: 19px 55px 31px;" class="copyright">
+                <td style="padding: 19px 30px 31px;" class="copyright">
                     <p style="color: #474747; font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 7px; padding: 0 9%; line-height: 17px;" class="copyright-row">This is an automated notification. Please do not reply to this email.</p>
                     
-                    <p style="color: #474747; font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; padding: 0 9%; line-height: 17px;" class="copyright-row">If you don’t want to receive notifications from our website, click <a href=""  target="_blank" style="font-size: 12px; line-height: 16px; color: #1C47A1; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-decoration: none;">unsubscribe</a>.</p>
+                    <p style="color: #474747; font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; padding: 0 9%; line-height: 17px;" class="copyright-row">If you don’t want to receive notifications from our website, click <a href="" target="_blank" style="font-size: 12px; line-height: 16px; color: #1C47A1; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-decoration: none;">unsubscribe</a>.</p>
                     
                     <p style="color: #474747; font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0 0 5px; padding: 0 9%; line-height: 17px;" class="copyright-row">For more information, please read our <a href=""  target="_blank" style="font-size: 12px; line-height: 16px; color: #1C47A1; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-decoration: none;">FAQ</a>.</p>
 
-                    
                     <p style="color: #474747; font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; padding: 0 9%; line-height: 17px; font-weight: bold;" class="copyright-row">You can always reach us at <a href="mailto:support@complaintsboard.com" target="_blank" style="font-size: 12px; line-height: 16px; color: #1C47A1; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none;">support@complaintsboard.com</a>.</p>
                     
                     <p style="color: #474747; font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; padding: 0 9%; line-height: 17px; font-weight: bold;" class="copyright-row">We will endeavor to respond to your query at the earliest opportunity, normally within 48 hours (business days only).</p>
